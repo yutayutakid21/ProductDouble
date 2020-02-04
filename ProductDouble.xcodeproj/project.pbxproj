@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A4F892F723E96DB700792794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F892F623E96DB700792794 /* AppDelegate.swift */; };
 		A4F892F923E96DB700792794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F892F823E96DB700792794 /* SceneDelegate.swift */; };
-		A4F892FB23E96DB700792794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F892FA23E96DB700792794 /* ViewController.swift */; };
 		A4F892FE23E96DB700792794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F892FC23E96DB700792794 /* Main.storyboard */; };
 		A4F8930023E96DBA00792794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F892FF23E96DBA00792794 /* Assets.xcassets */; };
 		A4F8930323E96DBA00792794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F8930123E96DBA00792794 /* LaunchScreen.storyboard */; };
+		A4F8930B23E96E5100792794 /* KondoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F8930A23E96E5100792794 /* KondoViewController.swift */; };
+		A4F8930D23E96E6800792794 /* NakatsukaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F8930C23E96E6800792794 /* NakatsukaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4F892F323E96DB700792794 /* ProductDouble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductDouble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F892F623E96DB700792794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4F892F823E96DB700792794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4F892FA23E96DB700792794 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4F892FD23E96DB700792794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4F892FF23E96DBA00792794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F8930223E96DBA00792794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4F8930423E96DBA00792794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F8930A23E96E5100792794 /* KondoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KondoViewController.swift; sourceTree = "<group>"; };
+		A4F8930C23E96E6800792794 /* NakatsukaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NakatsukaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				A4F892F623E96DB700792794 /* AppDelegate.swift */,
 				A4F892F823E96DB700792794 /* SceneDelegate.swift */,
-				A4F892FA23E96DB700792794 /* ViewController.swift */,
+				A4F8930A23E96E5100792794 /* KondoViewController.swift */,
+				A4F8930C23E96E6800792794 /* NakatsukaViewController.swift */,
 				A4F892FC23E96DB700792794 /* Main.storyboard */,
 				A4F892FF23E96DBA00792794 /* Assets.xcassets */,
 				A4F8930123E96DBA00792794 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4F892FB23E96DB700792794 /* ViewController.swift in Sources */,
 				A4F892F723E96DB700792794 /* AppDelegate.swift in Sources */,
+				A4F8930B23E96E5100792794 /* KondoViewController.swift in Sources */,
+				A4F8930D23E96E6800792794 /* NakatsukaViewController.swift in Sources */,
 				A4F892F923E96DB700792794 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yutaudemy.ProductDouble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yutaudemy.ProductDouble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
