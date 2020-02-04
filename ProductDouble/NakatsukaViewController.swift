@@ -14,6 +14,8 @@ class NakatsukaViewController: UIViewController {
     
     @IBOutlet weak var passData: UILabel!
     
+    passText.text = String("passtext")
+    
     /*
      
      ・近藤さんがpassTextという値を渡してくるので、
