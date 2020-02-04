@@ -20,10 +20,13 @@ class KondoViewController: UIViewController,UITableViewDelegate,UITableViewDataS
        
        //課題、承知しました。
     //これからコードベースの作成をします
-       
+    
+    var tableViewCode:UITableView!
+     
     
     
-    @IBOutlet weak var tableView: UITableView!
+    
+//    @IBOutlet weak var tableView: UITableView!
     
     var indexNumber = 0
     
@@ -32,8 +35,25 @@ class KondoViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+//        tableView.delegate = self
+//        tableView.dataSource = self
+//
+        
+        tableViewCode = UITableView()
+        // テーブルサイズを画面いっぱいに
+        tableViewCode.frame = view.frame
+
+        tableViewCode.delegate = self
+        tableViewCode.dataSource = self
+        
+        // セルをテーブルに紐付ける
+        tableViewCode.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+
+        // データのないセルを表示しないようにするハック
+        tableViewCode.tableFooterView = UIView(frame: .zero)
+
+        // テーブルを表示
+        view.addSubview(tableViewCode)
         
 
         // Do any additional setup after loading the view.
@@ -49,7 +69,7 @@ class KondoViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         cell.textLabel?.text = stationArray[indexPath.row]
         
         return cell
@@ -66,3 +86,5 @@ class KondoViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
 
 }
+
+
