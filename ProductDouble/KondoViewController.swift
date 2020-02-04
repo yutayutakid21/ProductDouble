@@ -18,6 +18,8 @@ class KondoViewController: UIViewController {
      
      */
     
+    //課題、承知しました。
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
