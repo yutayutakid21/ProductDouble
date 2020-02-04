@@ -19,6 +19,7 @@ class KondoViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         */
        
        //課題、承知しました。
+    //これからコードベースの作成をします
        
     
     
