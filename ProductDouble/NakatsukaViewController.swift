@@ -10,6 +10,10 @@ import UIKit
 
 class NakatsukaViewController: UIViewController {
 
+    var passText = String()
+    
+    @IBOutlet weak var passData: UILabel!
+    
     /*
      
      ・近藤さんがpassTextという値を渡してくるので、
@@ -26,7 +30,12 @@ class NakatsukaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func pushButton(_ sender: Any) {
+        
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
