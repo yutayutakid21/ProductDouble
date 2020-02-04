@@ -14,7 +14,7 @@ class NakatsukaViewController: UIViewController {
     
     @IBOutlet weak var passData: UILabel!
     
-    passText.text = String("passtext")
+    
     
     /*
      
@@ -28,7 +28,9 @@ class NakatsukaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        var passText;.text = String("passData")
         // Do any additional setup after loading the view.
     }
     
