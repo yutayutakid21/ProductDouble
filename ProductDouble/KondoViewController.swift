@@ -9,6 +9,8 @@
 import UIKit
 
 class KondoViewController: UIViewController {
+    
+    
 
     /*
      
@@ -19,6 +21,10 @@ class KondoViewController: UIViewController {
      */
     
     //課題、承知しました。
+    
+    
+    var stationArray = ["新宿","渋谷","恵比寿","五反田","高輪ゲートウェイ"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
