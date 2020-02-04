@@ -30,7 +30,7 @@ class NakatsukaViewController: UIViewController {
         super.viewDidLoad()
         
         
-        var passText;.text = String("passData")
+        passData.text = passText
         // Do any additional setup after loading the view.
     }
     
