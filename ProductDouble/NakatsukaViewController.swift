@@ -32,7 +32,7 @@ class NakatsukaViewController: UIViewController {
     
     @IBAction func pushButton(_ sender: Any) {
         
-        
+        dismiss(animated: true, completion: nil)
         
     }
     
